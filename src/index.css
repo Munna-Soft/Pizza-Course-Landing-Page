@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@fontsource/hind-siliguri/400.css';
+@import '@fontsource/hind-siliguri/500.css';
+@import '@fontsource/hind-siliguri/600.css';
+@import '@fontsource/hind-siliguri/700.css';
+
+@layer base {
+  :root {
+    /* Warm Pizza-Inspired Color Palette */
+    --background: 35 40% 98%;
+    --foreground: 20 20% 15%;
+
+    --card: 35 30% 96%;
+    --card-foreground: 20 20% 15%;
+
+    --popover: 35 30% 96%;
+    --popover-foreground: 20 20% 15%;
+
+    /* Warm Orange - Pizza Crust / Tomato Sauce */
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Cream - Dough Inspired */
+    --secondary: 40 30% 92%;
+    --secondary-foreground: 20 20% 20%;
+
+    --muted: 35 20% 90%;
+    --muted-foreground: 20 10% 45%;
+
+    /* Fresh Basil Green */
+    --accent: 142 60% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Tomato Red for urgency */
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 25 95% 53%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --pizza-gold: 40 90% 55%;
+    --pizza-brown: 25 40% 30%;
+    --pizza-cream: 40 40% 95%;
+    --pizza-red: 8 85% 55%;
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(8 85% 55%) 100%);
+    --gradient-warm: linear-gradient(180deg, hsl(35 40% 98%) 0%, hsl(40 40% 95%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(142 60% 40%) 0%, hsl(142 70% 35%) 100%);
+    --gradient-price: linear-gradient(135deg, hsl(8 85% 55%) 0%, hsl(25 95% 53%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(25 95% 53% / 0.15);
+    --shadow-card: 0 8px 30px -4px hsl(20 20% 15% / 0.1);
+    --shadow-button: 0 4px 15px -2px hsl(25 95% 53% / 0.4);
+    --shadow-glow: 0 0 40px hsl(25 95% 53% / 0.3);
+
+    /* Sidebar (unused but keeping for compatibility) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 20 15% 10%;
+    --foreground: 35 30% 95%;
+
+    --card: 20 15% 15%;
+    --card-foreground: 35 30% 95%;
+
+    --popover: 20 15% 15%;
+    --popover-foreground: 35 30% 95%;
+
+    --primary: 25 95% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 15% 20%;
+    --secondary-foreground: 35 30% 95%;
+
+    --muted: 20 15% 25%;
+    --muted-foreground: 35 20% 60%;
+
+    --accent: 142 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 15% 25%;
+    --input: 20 15% 25%;
+    --ring: 25 95% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Hind Siliguri', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-hero {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-warm {
+    background: var(--gradient-warm);
+  }
+
+  .bg-gradient-cta {
+    background: var(--gradient-cta);
+  }
+
+  .bg-gradient-price {
+    background: var(--gradient-price);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-button {
+    box-shadow: var(--shadow-button);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s linear infinite;
+    background-size: 200% 100%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
