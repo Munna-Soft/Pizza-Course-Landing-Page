@@ -1,9 +1,11 @@
 <!-- GitAds-Verify: W7S3ENIOGDDEQW6CDOD3NWS8ZQ5NW1W8 -->
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=munna-soft/pizza-course-landing-page@github)](https://gitads.dev/v1/ad-track?source=munna-soft/pizza-course-landing-page@github)
 
 # 🍕 Pizza Course Landing Page
 
-একটি আধুনিক, রেসপনসিভ এবং দ্রুত লোডিং **বাংলা ল্যান্ডিং পেজ**, যা তৈরি করা হয়েছে
-Vite + React + TypeScript + Tailwind CSS + shadcn/ui ব্যবহার করে।
+একটি আধুনিক, রেসপনসিভ এবং দ্রুত লোডিং **বাংলা ল্যান্ডিং পেজ** যা তৈরি করা হয়েছে
+**Vite + React + TypeScript + Tailwind CSS + shadcn/ui** ব্যবহার করে।
 
 এই প্রজেক্টটি সম্পূর্ণ **Static SPA (Single Page Application)** —
 কোনো Backend বা Database সংযুক্ত নেই।
@@ -11,8 +13,8 @@ Vite + React + TypeScript + Tailwind CSS + shadcn/ui ব্যবহার ক�
 ---
 
 ## 🔗 See Live Preview on below link 👇👇  
-👉 [Images](/documentation/FullPageSS.png)
-👉 [PDF](/documentation/FullPagePDF.pdf)
+👉 [Full Webpage View as Image](/documentation/FullPageSS.png)
+👉 [Full Webpage View as PDF](/documentation/FullPagePDF.pdf)
 
 ---
 
@@ -41,7 +43,7 @@ Vite + React + TypeScript + Tailwind CSS + shadcn/ui ব্যবহার ক�
 
 ### 🔄 Install Dependencies  
 
-2. Open Project Directory & run **cmd** in directory url section or vs code terminal
+2. Open Project Directory & run **cmd** in directory url section or open project as vs code terminal
     ```sh
     npm install
     ```
@@ -57,7 +59,7 @@ Vite + React + TypeScript + Tailwind CSS + shadcn/ui ব্যবহার ক�
 
 ### 🧑‍💻 Run Project Locally 🚀  
 
-3. Open Project Directory & run **cmd** in directory url section or vs code terminal
+3. Open Project Directory & run **cmd** in directory url section or open project as vs code terminal
     ```sh
     npm run dev
     ```
@@ -78,7 +80,7 @@ Vite + React + TypeScript + Tailwind CSS + shadcn/ui ব্যবহার ক�
 
 ## 🏗️ Build for Production (cPanel / Shared Hosting)  
 
-0. Open Project Directory & run **cmd** in directory url section or vs code terminal
+0. Open Project Directory & run **cmd** in directory url section or open project as vs code terminal
     ```sh
     npm run build
     ```
@@ -105,7 +107,7 @@ Vite + React + TypeScript + Tailwind CSS + shadcn/ui ব্যবহার ক�
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule . /index.html [L]
     ```
-    Or Upload already build htaccess file from `documentation→.htaccess`
+    Or Upload already build htaccess file from `documentation/ → .htaccess`
 
 ---
 
@@ -131,6 +133,8 @@ It motivates me to build **more awesome systems**! & consider buying me a coffee
 
 </div>
 
-
 ## 🤝 Contribution  
 Pull requests and issues are welcome if you want to improve or suggest new features.
+
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=munna-soft/pizza-course-landing-page@github)](https://gitads.dev/v1/ad-track?source=munna-soft/pizza-course-landing-page@github)
